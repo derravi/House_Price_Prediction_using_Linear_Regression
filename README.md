@@ -18,8 +18,9 @@ This project demonstrates how to predict house prices using machine learning wit
 house_data.csv contains the dataset
 house_price_prediction.py contains data preprocessing, model training, visualization, and prediction code
 README.md explains the project details
-<br>
+
 <b>
+<br>
 How to run the project
 Option 1 Run directly in Python
 </b>
