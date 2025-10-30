@@ -3,6 +3,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error,mean_squared_error,r2_score
 import matplotlib.pyplot as plt
 import numpy as np
+import pickle
 
 #Load the Datasets
 df = pd.read_csv("house_data.csv")
@@ -44,6 +45,9 @@ print("Mean Absolute Error(MAE):",round(mae,2))
 print("Mean Squared Error(MSE):",round(mse,2))
 print("Root Mean Squared Error(RMSE):",round(rmse,2))
 print("R^2 Score:",round(r2_score,2))
+
+with open("model.pkl", "wb") as f:
+    pickle.dump(model1, f)
 
 #Histogram Chart
 print("Distribution of the House Price...........\n")
