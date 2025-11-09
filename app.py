@@ -12,7 +12,8 @@ app = FastAPI()
 
 @app.get("/")
 def root():
-    return {"message": "Welcome to the House Price Prediction API!"} 
+    return {"message": "Welcome to the House Price Prediction API!",
+            "this and add into you browser after Host_ip for Open House Price Prediction Apis:":"/docs"} 
 
 @app.post("/predict")
 def predict_premium(data:UserInput):
